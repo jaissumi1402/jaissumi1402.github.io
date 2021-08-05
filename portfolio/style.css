@@ -1,4 +1,6 @@
-
+html{
+  font-size: 62.5%;
+}
 
 *{
     padding: 0;
@@ -9,10 +11,12 @@
   }
   body{
     font-family: montserrat;
+    background: url(assets/page-bg.jpg) no-repeat;
+    background-attachment: fixed;
   }
   nav{
     background: #323538;
-    height: 80px;
+    height: 8rem;
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -27,18 +31,18 @@
   } */
   nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 2rem;
   }
   nav ul li{
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    line-height: 8rem;
+    margin: 0 .5rem;
   }
   nav ul li a{
     color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
+    font-size: 1.7rem;
+    padding: .7rem 1.3rem;
+    border-radius: .3rem;
     text-transform: uppercase;
   }
   a.active,a:hover{
@@ -46,11 +50,11 @@
     transition: .5s;
   }
   .checkbtn{
-    font-size: 30px;
+    font-size: 3rem;
     color: white;
     float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    line-height: 8rem;
+    margin-right: 4rem;
     cursor: pointer;
     display: none;
   }
@@ -58,18 +62,30 @@
     display: none;
   }
   @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
+    html{
+      font-size: 55%;
+    }
+    /* .image{
+      position: relative;
+      left: 20rem;
+    } */
+    /* label.logo{
+      font-size: 3rem;
+      padding-left: 5rem;
     }
     nav ul li a{
-      font-size: 16px;
-    }
+      font-size: 1.6rem;
+    } */
   }
   @media (max-width: 858px){
     .checkbtn{
       display: block;
     }
+    
+    /* .image{
+      position: relative;
+    left: 53rem;
+    } */
     ul{
       position: fixed;
       width: 100%;
@@ -85,9 +101,9 @@
       margin: 50px 0;
       line-height: 30px;
     }
-    nav ul li a{
+    /* nav ul li a{
       font-size: 20px;
-    }
+    } */
     a:hover,a.active{
       background: none;
       color: #0082e6;
@@ -95,9 +111,66 @@
     #check:checked ~ ul{
       left: 0;
     }
+    html{
+      font-size: 40%;
+    }
+    
   }
   section{
-    background: url(assets/page-bg.jpg) no-repeat;
+    
     background-size: cover;
     height: calc(100vh - 80px);
   }
+  h1{
+    text-align: center;
+    margin-top: 35rem;
+    color: aliceblue;
+    font-size: 4rem;
+  }
+  .description{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(139, 185, 185);
+    margin-top: 2rem;
+  }
+  #about{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 50rem;
+    color: aliceblue;
+
+  }
+  #about-detail{
+    text-align: start;
+    color: rgb(139, 185, 185);
+    font-size: 2.6rem;
+  }
+  .image{
+    background-image: url(assets/profile.jpg);
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    /* position: relative;
+    left: 680px */
+  }
+  .container{
+    width: 100%;
+    
+    
+  }
+  .pic{
+    flex: 1;
+    /* margin-left: 20rem; */
+    text-align: center;
+
+  }
+  .para{
+    flex: 2;
+  }
+  @media(min-width: 768px){
+    .container{
+      display: flex;
+    justify-content:center;
+    }
+  }
+  
