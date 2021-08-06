@@ -1,6 +1,10 @@
 html{
   font-size: 62.5%;
 }
+.wrapper{
+  padding: 3rem;
+  margin: 2rem;
+}
 
 *{
     padding: 0;
@@ -137,7 +141,7 @@ html{
     text-align: center;
     font-size: 4rem;
     margin-top: 50rem;
-    color: aliceblue;
+    color: rgba(196, 110, 29, 0.836);
 
   }
   #about-detail{
@@ -172,5 +176,15 @@ html{
       display: flex;
     justify-content:center;
     }
+  }
+  .edu{
+    color: rgba(196, 110, 29, 0.836);
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about-me{
+    background-color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   
